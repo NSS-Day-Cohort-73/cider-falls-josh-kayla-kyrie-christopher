@@ -18,14 +18,14 @@ const servicesHTMLString = parkServices()
 // Build HTML structure
 const fullHTMLString = `
 	<h2 id="park-header">
-		<div id="logo">Park Logo</div>
-		<div id="park-name">Park Name<div>
+		<div id="logo"><img src="./imgs/logo.png" width="300"></div>
+		<div id="park-name">Cider Falls<div>
 	</h2>
 	<main id="mainflex">
 		<div class="flexleft">
 			<article id="services">
 				<h4>Services</h4>
-				<section>
+				<section class="service">
                     ${servicesHTMLString}
 				</section>
 			</article>

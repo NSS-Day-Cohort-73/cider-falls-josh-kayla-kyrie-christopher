@@ -3,7 +3,7 @@ import { getServices, getAreaServices, getAreas} from "./database.js"
 const services = getServices()
 
 export const parkServices = () => {
-    let buildServicesHTML = "<ul>"
+    let buildServicesHTML = "<ul id='service'>"
 
     for (const service of services) {
         buildServicesHTML += `<li data-type = "service" data-id="${service.id}" data-name="${service.name}">${service.name}</li>`

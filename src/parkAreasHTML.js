@@ -37,7 +37,7 @@ export const buildAreasHTML = () => {
         for (const areaService of areaServices) {
             if (areaService.areaId === area.id) {
                 const foundElement = services.find((service) => areaService.serviceId === service.id)
-                    areasHTML += `<li>${foundElement.name}</li>`
+                    areasHTML += `<li class="area">${foundElement.name}</li>`
             }
         }
         // Close HTML list and section tags

@@ -7,9 +7,22 @@
     display:flex;
 }
 
+.flexleft {
+    display: flex;
+    flex-direction: column;
+}
+
 #services {
     display:flex;
-    flex-direction:column;
+    flex-direction: column;
+    max-height: 30%;
+    
+}
+
+#service {
+    display: flex;
+    max-height: 30%;
+    flex-flow: column wrap;
 }
 
 #areas {
@@ -36,7 +49,7 @@ foot {
 }
 
 #park-name {
-    text-align:center;
+    text-align: left;
     padding: 30px;
     width: 70%;
 }
